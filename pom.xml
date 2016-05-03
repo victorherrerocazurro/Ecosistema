@@ -60,5 +60,6 @@
 		<module>ParejasInterfaces</module>
 		<module>ParejasPersistencia</module>
 		<module>ParejasNegocio</module>
+		<module>ParejasWeb</module>
 	</modules>
 </project>
