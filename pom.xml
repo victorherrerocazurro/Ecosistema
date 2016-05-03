@@ -68,6 +68,7 @@
 				<configuration>
 					<username>${scm.user}</username>
 					<password>${scm.password}</password>
+					<connectionUrl>${scm.developerConnection}</connectionUrl>
 				</configuration>
 			</plugin>
 			<plugin>
