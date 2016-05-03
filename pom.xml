@@ -54,5 +54,6 @@
 	</build>
 	<modules>
 		<module>ParejasModelo</module>
+		<module>ParejasInterfaces</module>
 	</modules>
 </project>
