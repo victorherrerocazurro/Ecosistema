@@ -1,0 +1,10 @@
+.metadata/
+.settings/
+.recommenders/
+
+.recommenders
+.project
+.classpath
+
+#Maven
+target/
