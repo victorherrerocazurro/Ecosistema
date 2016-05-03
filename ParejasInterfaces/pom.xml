@@ -3,14 +3,14 @@
   <parent>
     <groupId>com.curso.ecosistema</groupId>
     <artifactId>ParejasCore</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
   </parent>
   <artifactId>ParejasInterfaces</artifactId>
   <dependencies>
   	<dependency>
   		<groupId>com.curso.ecosistema</groupId>
   		<artifactId>ParejasModelo</artifactId>
-  		<version>0.0.3</version>
+  		<version>0.0.4-SNAPSHOT</version>
   	</dependency>
   	<dependency>
   		<groupId>commons-logging</groupId>

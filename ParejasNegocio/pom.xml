@@ -3,19 +3,19 @@
   <parent>
     <groupId>com.curso.ecosistema</groupId>
     <artifactId>ParejasCore</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
   </parent>
   <artifactId>ParejasNegocio</artifactId>
   <dependencies>
 		<dependency>
 			<groupId>com.curso.ecosistema</groupId>
 			<artifactId>ParejasInterfaces</artifactId>
-			<version>0.0.3</version>
+			<version>0.0.4-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.curso.ecosistema</groupId>
 			<artifactId>ParejasPersistencia</artifactId>
-			<version>0.0.3</version>
+			<version>0.0.4-SNAPSHOT</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
