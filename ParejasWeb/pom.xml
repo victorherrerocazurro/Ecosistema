@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.curso.ecosistema</groupId>
 		<artifactId>ParejasCore</artifactId>
-		<version>0.0.4</version>
+		<version>0.0.5-SNAPSHOT</version>
 	</parent>
 	<artifactId>ParejasWeb</artifactId>
 	<packaging>war</packaging>
@@ -29,12 +29,12 @@
 		<dependency>
 			<groupId>com.curso.ecosistema</groupId>
 			<artifactId>ParejasNegocio</artifactId>
-			<version>0.0.4</version>
+			<version>0.0.5-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.curso.ecosistema</groupId>
 			<artifactId>ParejasPersistencia</artifactId>
-			<version>0.0.4</version>
+			<version>0.0.5-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-dbcp</groupId>
