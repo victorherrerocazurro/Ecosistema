@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.curso.ecosistema</groupId>
 	<artifactId>ParejasCore</artifactId>
@@ -7,8 +8,48 @@
 	<packaging>pom</packaging>
 	<scm>
 		<developerConnection>scm:git:https://github.com/victorherrerocazurro/Ecosistema</developerConnection>
-	  <tag>HEAD</tag>
-  </scm>
+		<tag>HEAD</tag>
+	</scm>
+	<!-- Para indicar a maven que descargue los jar desde el repo de empresa -->
+	<repositories>
+		<repository>
+			<id>archiva.internal</id>
+			<url>http://localhost:8080/repository/internal/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>archiva.snapshots</id>
+			<url>http://localhost:8080/repository/snapshots/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<!-- PAra indica a maven que publique los jar en el repo de empresa -->
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>archiva.internal</id>
+			<name>Releases</name>
+			<url>http://Victor-Portatil:8080/repository/internal</url>
+			<layout>default</layout>
+		</repository>
+		<snapshotRepository>
+			<uniqueVersion>true</uniqueVersion>
+			<id>archiva.snapshots</id>
+			<name>Snapshots</name>
+			<url>http://Victor-Portatil:8080/repository/snapshots</url>
+			<layout>default</layout>
+		</snapshotRepository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -57,6 +98,19 @@
 				<configuration>
 					<source>1.6</source>
 					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.7.1</version>
+				<configuration>
+					<excludes>
+						<exclude>**/integracion/*.java</exclude>
+					</excludes>
+					<includes>
+						<include>**/unitarias/*.java</include>
+					</includes>
 				</configuration>
 			</plugin>
 			<!-- plugin> <groupId>org.codehaus.sonar</groupId> <artifactId>sonar-maven-plugin</artifactId> 
