@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>com.curso.ecosistema</groupId>
 		<artifactId>ParejasCore</artifactId>
-		<version>0.0.3</version>
+		<version>0.0.3-SNAPSHOT</version>
 	</parent>
 	<artifactId>ParejasModelo</artifactId>
 	<dependencies>
