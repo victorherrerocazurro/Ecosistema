@@ -48,6 +48,11 @@
 			<version>2.53.0</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.18</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>ParejasWeb</finalName>
@@ -84,7 +89,7 @@
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
-				<version>8.1.16.v20140903</version>
+				<version>7.6.16.v20140903</version>
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<stopKey>foo</stopKey>
