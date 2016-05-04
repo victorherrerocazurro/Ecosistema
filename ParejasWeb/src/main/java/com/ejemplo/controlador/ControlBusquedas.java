@@ -28,14 +28,14 @@ public class ControlBusquedas extends HttpServlet {
     	
     	ServicioBuscadorParejaPersonaDaoImpl buscador=new ServicioBuscadorParejaPersonaDaoImpl();
     	BasicDataSource dataSource = new BasicDataSource();
-		/*dataSource.setUrl("jdbc:mysql://localhost:3306/pruebas");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/parejas");
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUsername("root");
-		dataSource.setPassword("root");*/
-    	dataSource.setUrl("jdbc:oracle:thin:@192.168.111.128:1521:xe");
+		dataSource.setPassword("root");
+    	/*dataSource.setUrl("jdbc:oracle:thin:@192.168.111.128:1521:xe");
 		dataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
 		dataSource.setUsername("pruebas");
-		dataSource.setPassword("pruebas");
+		dataSource.setPassword("pruebas");*/
 		
 		PersonaDaoJDBCImpl personaDao = new PersonaDaoJDBCImpl();
 		personaDao.setDataSource(dataSource);
